@@ -1,60 +1,133 @@
-* {
-        box-sizing: border-box;
+* {  box-sizing: border-box;   }
+
+   body {
+   margin: 0;
+   font-family: Arial, sans-serif;
+   background-color: #f6f8ff;
+   color: #141d2f;
+         }
+  header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 20px;
+   padding: 30px 5%;
         }
 
-        body {
-          margin: 0;
-            font-family: Arial, sans-serif;
-              background-color: #f6f8ff;
-                color: #141d2f;
-                }
+    .logo {
+  font-size: 24px;
+ font-weight: bold;
+     letter-spacing: 2px;
+          }
 
-                header {
-                  display: flex;
-                    align-items: center;
-                      justify-content: space-between;
-                        gap: 20px;
-                          padding: 30px 5%;
-                          }
+    #theme-toggle {
+   border: none;
+   background: transparent;
+   font-size: 14px;
+   font-weight: bold;                               
+   cursor: pointer;
+                 }
 
-                          .logo {
-                            font-size: 24px;
-                              font-weight: bold;
-                                letter-spacing: 2px;
-                                }
+    #search-form {
+      display: flex;
+       align-items: center;
+      gap: 10px;
+                 }
 
-                                #theme-toggle {
-                                  border: none;
-                                    background: transparent;
-                                      font-size: 14px;
-                                        font-weight: bold;                                          cursor: pointer;
-                                          }
+   #search-form label {
+      display: none;
+                      }
 
-                                          #search-form {
-                                            display: flex;
-                                              align-items: center;
-                                                gap: 10px;
-                                                }
+     #search-input {
+      width: 220px;
+      padding: 12px 15px;
+      border: 1px solid #d9deeb;
+      border-radius: 8px;
+      font-size: 14px;
+                  }
 
-                                                #search-form label {
-                                                  display: none;
-                                                  }
-
-                                                  #search-input {
-                                                    width: 220px;
-                                                      padding: 12px 15px;
-                                                        border: 1px solid #d9deeb;
-                                                          border-radius: 8px;
-                                                            font-size: 14px;
-                                                            }
-
-                                                            #search-form button {
-                                                              padding: 12px 20px;
-                                                                border: none;
-                                                                  border-radius: 8px;
-                                                                    background-color: #141d2f;
-                                                                      color: white;
-                                                                        font-weight: bold;
-                                                                          cursor: pointer;
+   #search-form button {
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      background-color: #141d2f;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
                                                                           
 }
+main {
+      padding: 40px 5%;
+        }
+
+      .planet-section {
+        max-width: 900px;
+       margin: 0 auto;
+            }
+
+      .planet-card {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 40px;
+            padding: 40px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(20, 29, 47, 0.08);
+                  }
+
+      #planet-image {
+            width: 100%;
+            max-width: 350px;
+            justify-self: center;
+            border-radius: 12px;
+                  }
+
+      .planet-info {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+                   }
+
+      #planet-type {
+            margin: 0;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+                   }
+
+      #planet-name {
+            margin: 0;
+            font-size: 42px;
+                   }
+
+      #planet-description {
+            margin: 0;
+            line-height: 1.6;
+            color: #5b6475;
+                         }
+
+      .planet-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 15px;
+                    }
+
+      .stat {
+            padding: 15px;
+            border-radius: 10px;
+            background-color: #f6f8ff;
+            }
+
+      .stat span {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 12px;
+            color: #5b6475;
+                  }
+
+      .stat strong {
+            font-size: 18px;
+                  }

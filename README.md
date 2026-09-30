@@ -1,1 +1,1 @@
-# planet-explorer-capstone-project-
+# planet-explorer-capstone-project
